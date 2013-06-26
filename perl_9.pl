@@ -3,7 +3,9 @@ use strict;
 use warnings;
 
 my $price = $ARGV[0];
-my $harau = $ARGV[1];
+my $pay = $ARGV[1];
+
+my $change = $pay - $price;
 
 
 
