@@ -15,13 +15,13 @@ my $var = {
 	test => [3,5,6,7,8]
 };
 
-#print Dumper $var;
+print Dumper $var;
 
 
-{
-    local $Data::Dumper::Deparse = 1;
-    print Data::Dumper::Dumper $var;
-}
+#{
+#    local $Data::Dumper::Deparse = 1;
+#    print Data::Dumper::Dumper $var;
+#}
 
 
 
