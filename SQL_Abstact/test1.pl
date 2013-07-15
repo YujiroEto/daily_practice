@@ -18,4 +18,8 @@ my ($stmt, @bind)  =  $s->select(
 );
 #print dump( $stmt, \@bind );
 
-print Data::Dumper::Dumper ( $stmt, \@bind );
+print Dumper ( $stmt, \@bind );
+
+## こんな感じで実効
+#my $sth  =  $dbh->prepare($stmt);
+#$sth->execute(@bind);
