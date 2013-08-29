@@ -22,3 +22,7 @@ print $obj->blog;
 print "\n";
 
 
+#$obj->test('ccc');
+#print $obj->test;
+
+

@@ -24,4 +24,3 @@ $d->data('data_d');
 MyCDI->data('Class_Data');
 printf "c:%s, d:%s\n",$c->data,$d->data;
 
-

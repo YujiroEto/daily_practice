@@ -1,12 +1,11 @@
 #!/usr/bin/env perl
 use strict;
 use warnings;
-use YAML;
+#use YAML;
 use Data::Dumper;
 use FormValidator::Simple;
 
-FormValidator::Simple->set_messages('/Users/Yujiro/git_YujiroEto/daily_practice/FormValidator_Simple/message.yml');
-#FormValidator::Simple->set_mesasges_decode_from('utf-8');
+FormValidator::Simple->set_message_decode_from('sjis');
 
 my $params = +{
     param1 => '12345',
@@ -33,9 +32,13 @@ my $result = FormValidator::Simple->check(
     ]
 );
 
-#my $message = $result->messages('action1');
+my $validation_type = 'message2';
+FormValidator::Simple->set_messages("/Users/yujiro.eto/github/YujiroEto/daily_practice/FormValidator_Simple/$validation_type.yml");
 
-my $message = $result->field_messages('action1');
+#my $message = $result->messages('action1');
+#print Dumper $result;
+
+my $message = $result->field_messages('action2');
 print Dumper $message;
 #print $result->has_error."\n";
 #print Dumper $result->error;
@@ -48,3 +51,5 @@ print Dumper $message;
 #        printf "$key:%s\n", join q{,}, @types;
 #    }
 #}
+
+
