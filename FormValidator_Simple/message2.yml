@@ -1,0 +1,12 @@
+DEFAULT:
+    name:
+        DEFAULT: 名前は不正です。
+action2:
+    param2:
+        NOT_BLANK: 入力値が空欄です
+        INT: 型がちがいます
+        LENGTH: 入力値は1~100文字です
+    mail1:
+        EMAIL_LOOSE: 不正なメールアドレス
+    mails:
+        DUPLICATION: invalid_test
