@@ -7,6 +7,7 @@ use FormValidator::Simple;
 
 FormValidator::Simple->set_message_decode_from('sjis');
 
+
 my $params = +{
     param1 => '12345',
 	param2 => 'abcdefg',
