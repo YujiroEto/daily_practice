@@ -1,5 +1,6 @@
 #!/usr/bin/env perl
 
+
 $_ = 'A = 15; B = 30; select(stdin); $| = 1; select(stdout);$| = 1; system
 "stty -echo -icanon eol \001"; for C(split(/\s/,"010.010.010.010
 77.77 022.020.020 330.030.030 440.044.000 055.550.000 666.060.".
