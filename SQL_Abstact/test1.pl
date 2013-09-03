@@ -6,9 +6,6 @@ use SQL::Abstract;
 
 use Data::Dumper;
 
-
-
-#http://perl-users.jp/articles/advent-calendar/2009/hacker/06.html
 #
 my $s  =  SQL::Abstract->new;
 my ($stmt, @bind)  =  $s->select(
